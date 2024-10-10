@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --secondary:rgba(255, 255, 255, .7);
+    --white:#ffffff;
+}
+.text-color{
+    color: var(--secondary);
+}
+
+.text-color:hover{
+    color: var(--white);
+}
+.dropdown-item:hover{
+     background-color: black; 
+
+}
+.slid-img{
+    position: relative;
+}
+.slider-image{
+ 
+    position: relative;
+}
+.slid-img:before{
+    content: "";
+    position: absolute;
+    width:100%;
+    height: 100%;
+   
+}
+.slid-img:hover::before{
+
+  
+    background-image: linear-gradient(#ffffff00, #21252959);
+
+    
+}
+.fa-heart{
+    color: #ffcc00;
+    font-size: 15px;
+}
+.dinner-text{
+    position: absolute;
+   bottom: 0;
+    z-index: 1000;
+    color:white;
+    display: none;
+}
+.slider-image :hover .dinner-text{
+    display: block;
+  
+}
+
+
+.slick-next:before {
+    content: '';
+    color:#ffcc00 !important  ;
+    font-size: 30px !important;
+
+}
+
+.slick-prev:before {
+    content: '';
+   
+    color:#ffcc00 !important  ;
+    font-size: 30px !important;
+ /* position: absolute;
+    left: 40px;
+    */
+    
+ 
+}
+ul{
+    list-style: none;
+}
+ul .footer-item:hover{
+    color:black;
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+.fa-facebook:hover{
+    color:rgb(216, 213, 213);
+}
+.fa-instagram:hover{
+    color:rgb(216, 213, 213);
+}
+.fa-google-plus-g:hover{
+    color:rgb(216, 213, 213);
+}
+.fa-twitter:hover{
+    color:rgb(216, 213, 213);
+}
+
+
+@media(max-width:1600px){
+    .img-none{
+        display: none;
+    }
+   
+}

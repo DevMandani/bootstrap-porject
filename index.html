@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
 
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -52,7 +51,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbar-main">
-                        <ul class="navbar-nav m-auto ">
+                        <ul class="navbar-nav column-gap-4 m-auto ">
                             <li class="nav-item dropdown">
                                 <a href="" class=" text-color dropdown-toggle " data-bs-toggle="dropdown"
                                     data-bs-target="#first-dropdown">Home
@@ -76,13 +75,13 @@
                                 <a href="" class=" text-color dropdown-toggle" data-bs-toggle="dropdown"
                                     data-bs-target="#second-dropdown">Pages
                                     <ul class="dropdown-menu bg-black" id="second-dropdown">
-                                        <li class="dropdown-item text-color">Menu</li>
+                                      <a href="/menu.html">  <li class="dropdown-item text-color">Menu</li></a>
                                         <hr />
-                                        <li class="dropdown-item text-color">Gallery</li>
+                                        <a href="/galllary.html"><li class="dropdown-item text-color">Gallery</li></a>
                                         <hr />
-                                        <li class="dropdown-item text-color">About</li>
+                                        <a href="/about.html"><li class="dropdown-item text-color">About</li></a>
                                         <hr />
-                                        <li class="dropdown-item text-color">Contact</li>
+                                        <a href="/contact.html"><li class="dropdown-item text-color">Contact</li></a>
                                         <hr />
                                     </ul>
                                 </a>
@@ -1331,11 +1330,11 @@
     
 
 
-    <section class="m-5">
+    <section class="my-5  position-relative">
         <div class="container ">
             
             <div class="row">
-                <div class="col-lg-7 col-12  border-primary border-2 p-2">
+                <div class="col-lg-5 position-relative col-12  border-primary border-2 p-2">
                     <div class=" border-danger border-2">
                         <p class="fs-2 f-semibold" data-aos="fade-up">About Us</p>
                         <p class="fs-1 fw-bold" data-aos="fade-up">Who Are We?
@@ -1401,15 +1400,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5  border-danger border-2 p-2">
+                <div class="col-lg-7  border-danger border-2 p-2">
               
-                        <img src="img/soup.png" class="position-absolute  right-100 soup-img soup" data-aos="fade-left" data-aos-duration="2000" style="width: 50%;" alt="">
+                        <img src="img/soup.png" class=" position-absolute end-0  soup" data-aos="fade-left" style="width:40%" data-aos-duration="2000" alt="">
                  
                 </div>
                 
             </div>
           
         </div>
+
+
     </section>
 
     <!-- ------------------- client section ended ------------------- -->
@@ -1422,7 +1423,7 @@
     <section class="position-relative " style="margin-top: 200px;">
         <div class="container-fluid" style="background-color: #f9fafd;">
             <img src="img/green.png" data-aos="fade-up-right" data-aos-duration="2000" class="position-absolute start-0 bottom-0 d-none d-xl-block" alt="" style="width:25%;">
-            <div class="container p-5  position-relative z-3">
+            <div class="container p-lg-5  position-relative z-3">
                 <div class="row ">
                     <div class="col-lg-12 text-center mt-5">
                         <h3 class="" data-aos="fade-up" data-aos-duration="1000">
@@ -1574,9 +1575,14 @@
     <section class="position-relative">
         <img src="img/pizza2.png" alt="" class="position-absolute img-fluid d-none d-xl-block " style=" bottom:0;right:0;left:50;width:300px;">
     <div class="container my-5 p-5 ">
-        <div class="carousel slide  m-auto" id="slider" data-bs-ride="carousel" data-bs-pause="false" style="max-width:500px;">
+        <div class="carousel slide  m-auto carousel-dark" id="slider" data-bs-ride="carousel" data-bs-pause="false" style="max-width:500px;">
+            <div class="carousel-indicators d-lg-none ">
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
             <div class="carousel-inner slide text-center">
-                <div class="carousel-item border active" >
+                <div class="carousel-item  active" >
                     <div class="p-5 ">
                         <h3 class="color-gray"><i class="ri-double-quotes-l"></i></h3>
                         <div class="d-flex justify-content-center">
@@ -1590,7 +1596,7 @@
                         <p class="fs-5 fw-semibold mb-0 color-gray">-Richard Hendriks</p>  
                     </div>
                 </div>
-                <div class="carousel-item border"  >
+                <div class="carousel-item "  >
                     <div class="p-5 ">
                         <h3 class="color-gray"><i class="ri-double-quotes-l"></i></h3>
                         <div class="d-flex justify-content-center">
@@ -1604,7 +1610,7 @@
                         <p class="fs-5 fw-semibold mb-0 color-gray">-Lily Rose</p>  
                     </div>
                 </div>
-                <div class="carousel-item border"  >
+                <div class="carousel-item "  >
                     <div class="p-5">
                         <h3 class="color-gray"><i class="ri-double-quotes-l"></i></h3>
                         <div class="d-flex justify-content-center">
@@ -1621,11 +1627,14 @@
     
             </div>
     
-            <button class="carousel-control-prev " data-bs-slide="prev" data-bs-target="#slider">
-                <span class="carousel-control-prev-icon  "></span>
+
+  
+
+            <button class="carousel-control-prev " data-bs-slide="prev" style="color: orange;" data-bs-target="#slider">
+                <span class="carousel-control-prev-icon  bg-warning rounded-5" style="color: orange;"></span>
             </button>
             <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#slider">
-                <span class="carousel-control-next-icon bg-warning rounded-5"></span>
+                <span class="carousel-control-next-icon bg-warning rounded-5" style="color: orange;"></span>
             </button>
         </div>   
     </div>
@@ -1755,8 +1764,8 @@
                 {
                     breakpoint: 1024,
                     settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
                         infinite: true,
 
                     }
@@ -1764,8 +1773,8 @@
                 {
                     breakpoint: 600,
                     settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2
+                        slidesToShow: 1,
+                        slidesToScroll: 1
                     }
                 },
                 {

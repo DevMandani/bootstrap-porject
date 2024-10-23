@@ -147,3 +147,23 @@ a{
     border-left: 6px solid green;
     height: 500px;
 }
+
+.carousel-control-prev {
+    color: orange !important;
+}
+.carousel-control-prev {
+    color:orange !important;
+}
+
+.carousel-dark .carousel-control-next-icon .carousel-dark .carousel-control-prev-icon{
+    color: orange !important;
+}
+.carousel-dark .carousel-control-next-icon{
+    filter: none!important;
+}
+.carousel-control-prev-icon {
+    color: orange !important;
+}
+.carousel-dark .carousel-control-prev-icon{
+    filter: none!important;
+}
